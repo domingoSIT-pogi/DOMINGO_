@@ -4,54 +4,71 @@
         <meta_charset="UTF-8">
         <meta name="viewport" content="width, initial-scale=1.0">
         <meta name="author" content="Domingo-Kyle">
-        <meta name="description" content="group-project">
+        <meta name="description" content="group project">
         </meta_charset>
-        <title>Final Terms - CSS styles</title>
+        <title>job search portal</title>
         <link href="styles/styles.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
-        <header>
-            <h1>JobFinder</h1>
-            <p>Find your dream job today!</p>
-        </header>
-    
-        <nav>
-            <a href="#">🏠 Home</a>
-            <a href="#">💼 Jobs</a>
-            <a href="#">🏢 Companies</a>
-            <a href="#">📞 Contact</a>
-        </nav>
-    
-        <div class="container">
-            <div class="search-bar">
-                <input type="text" placeholder="Search jobs by title or location">
-                <button>Search</button>
+<body>
+
+    <header>
+        <h1>Job Search Portal</h1>
+    </header>
+
+    <main>
+        <section class="search-form">
+            <h2>Search for Jobs</h2>
+                <label for="keywords">Job Title or Keywords:</label>
+                <input type="text" id="keywords" name="keywords" placeholder="e.g. Developer, Designer" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="City, State or Zip">
+
+                <label for="job-type">Job Type:</label>
+                <select id="job-type" name="job-type">
+                    <option value="full-time">Full-Time</option>
+                    <option value="part-time">Part-Time</option>
+                    <option value="freelance">Freelance</option>
+                </select>
+
+                <button type="submit" class="btn-search">Search Jobs</button>
+            </form>
+        </section>
+
+        <section class="job-results">
+            <h2>Job Listings</h2>
+            <div class="job-listings">
+                <!-- Example job listing -->
+                <div class="job-card">
+                    <h3>Software Engineer</h3>
+                    <p><strong>Company:</strong> ABC Technologies</p>
+                    <p><strong>Location:</strong> Remote</p>
+                    <p><strong>Type:</strong> Full-Time</p>
+                    <a href="#" class="btn-apply">Apply Now</a>
+                </div>
+
+                <div class="job-card">
+                    <h3>UX Designer</h3>
+                    <p><strong>Company:</strong> Design Studios</p>
+                    <p><strong>Location:</strong> San Francisco, CA</p>
+                    <p><strong>Type:</strong> Part-Time</p>
+                    <a href="#" class="btn-apply">Apply Now</a>
+                </div>
+
+                <div class="job-card">
+                    <h3>Product Manager</h3>
+                    <p><strong>Company:</strong> XYZ Enterprises</p>
+                    <p><strong>Location:</strong> New York, NY</p>
+                    <p><strong>Type:</strong> Freelance</p>
+                    <a href="#" class="btn-apply">Apply Now</a>
+                </div>
             </div>
-    
-            <div class="job-listing">
-                <h3>Software Developer</h3>
-                <p>Company: Tech Solutions Inc.</p>
-                <p>Location: Manila, Philippines</p>
-                <p>Full-time | Posted: 2 days ago</p>
-            </div>
-    
-            <div class="job-listing">
-                <h3>Graphic Designer</h3>
-                <p>Company: Creative Minds</p>
-                <p>Location: Quezon City, Philippines</p>
-                <p>Part-time | Posted: 5 days ago</p>
-            </div>
-    
-            <div class="job-listing">
-                <h3>Customer Service Representative</h3>
-                <p>Company: CallPro Services</p>
-                <p>Location: Makati, Philippines</p>
-                <p>Full-time | Posted: 1 day ago</p>
-            </div>
-        </div>
-    
-        <footer>
-            <p>&copy; 2025 JobFinder. All Rights Reserved.</p>
-        </footer>
-    </body>
-    </html>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Job Search Portal</p>
+    </footer>
+
+</body>
+</html>
