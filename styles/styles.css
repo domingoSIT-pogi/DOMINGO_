@@ -21,11 +21,11 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    transition: all 0.3s ease; /* smooth hover animation */
+    transition: all 0.3s ease; 
 }
 nav a:hover {
     color: #ffdd57;
-    transform: scale(1.2); /* makes the icon/link grow slightly */
+    transform: scale(1.2); 
 }
 .container {
     width: 90%;
